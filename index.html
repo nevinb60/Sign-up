@@ -22,17 +22,35 @@
             <form action="post">
                 <h1>Create your new account</h1>
                 <div class="content">
-                    <div id="first">
-                        <label for="first-name"><span>First Name</span></label>
+                    <div id="full">
+                        <label for="first-name"><span>Full Name</span></label>
                         <input title="first-name" type="text" required>
-                    </div>
-                    <div id="last">
-                        <label for="last-name"><span> Last Name</span></label>
-                        <input type="text" title="last-name" required>
                     </div>
                     <div id="email">
                         <label for="user_email"><span>Email address</span></label>
                         <input type="email" name="user_email" id="user_email" required>
+                    </div>
+                    <div id="password">
+                        <div class="password_icon"><label for="user_password"><span>Password</span></label>
+                            <img src="./images/visibitly_eye.svg" alt="visible password" srcset="">
+                        </div>
+
+
+                        <input type="text" id="user_password">
+
+
+
+
+                        <!-- convert the input type to password when completed and then create a function to toggle the password by clicking the image -->
+
+                        <ul class="criteria">
+                            <li class="invalid" id="minimum">8 character minimum</li>
+                            <li class="invalid" id="lowercase">One lowercase character</li>
+                            <li class="invalid" id="uppercase">One uppercase character</li>
+                            <li class="invalid" id="number">One number</li>
+                            <li class="invalid" id="special">One special character</li>
+
+                        </ul>
                     </div>
                     <div id="create">
                         <button type="button">Create Account</button>
@@ -49,5 +67,6 @@
 </body>
 <script src="gradient.js">
 </script>
+<script src="form.js"></script>
 
 </html>

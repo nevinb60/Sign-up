@@ -17,7 +17,8 @@ canvas {
     height: 55%;
     bottom: 0;
     right: 0;
-    clip-path: polygon(100% 100%, 0% 100%, 100% 0%);
+    clip-path: polygon(0% 42%, 100% 0%, 100% 100%, 0% 100%);
+
 }
 
 .form-container {
@@ -29,14 +30,11 @@ canvas {
 .header {
     display: flex;
     justify-content: baseline;
-}
-
-.header {
     width: fit-content;
-    margin: 0px 0px 0px 20px;
-
-
+    margin: 0px 0px 0px 30px;
 }
+
+
 
 .sign-up {
     display: flex;
@@ -54,21 +52,18 @@ canvas {
 form {
     position: relative;
     background-color: white;
-    padding: 45px;
+    padding: 70px;
     border-radius: 20px;
-    box-shadow: 5px 5px 5px 5px rgba(128, 128, 128, 0.095);
+    box-shadow: 5px 2px 5px 10px rgba(128, 128, 128, 0.095);
 
 }
 
-#first {
+#full {
     display: flex;
     flex-direction: column;
 }
 
-#last {
-    display: flex;
-    flex-direction: column;
-}
+
 
 #email {
     display: flex;
@@ -80,18 +75,55 @@ form {
     margin-right: auto;
 }
 
+#password {
+    display: flex;
+    flex-direction: column;
+}
 
-button {
+.invalid::marker {
+    color: green;
+
+}
+
+.valid {
+    color: gray;
+}
+
+
+label[for="user_password"] {
+    padding-right: 250px;
+}
+
+
+#create button {
     background-color: #5c58d2;
     color: white;
     border-radius: 10px;
-    height: 2rem;
-    border-color: white;
+    border: none;
+    font-size: large;
+    height: 3rem;
+    padding-inline: 7rem;
+    box-shadow: gray 2px 2px;
+    white-space: nowrap;
+}
+
+.criteria {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+}
 
 
+
+#create button:hover {
+    cursor: pointer;
 }
 
 input {
     height: 2rem;
+    border-radius: 10px;
+    font-size: medium;
+    /* overflow: hidden; */
 
 }
