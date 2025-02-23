@@ -35,6 +35,9 @@ canvas {
 }
 
 
+#email-error {
+    max-height: fit-content;
+}
 
 .sign-up {
     display: flex;
@@ -42,6 +45,9 @@ canvas {
 
 }
 
+#user_email {
+    gap: 0px;
+}
 
 .content {
     display: flex;
@@ -103,21 +109,30 @@ label[for="user_password"] {
     font-size: large;
     height: 3rem;
     padding-inline: 7rem;
-    box-shadow: gray 2px 2px;
+    box-shadow: rgb(177, 176, 176) 6px 6px;
     white-space: nowrap;
 }
 
 .criteria {
     display: flex;
     flex-direction: column;
+    margin-top: 0;
     gap: 5px;
 
 }
 
-
+#eye {
+    cursor: pointer;
+}
 
 #create button:hover {
     cursor: pointer;
+
+}
+
+#create button:active {
+    background-color: rgb(84, 84, 84);
+    box-shadow: 4px 4px;
 }
 
 input {
